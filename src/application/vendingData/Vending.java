@@ -60,7 +60,7 @@ public class Vending {
 		return null;
 	}
 	
-	// overloaded debugging load
+	// manual load
 	public void loadItem(Item newItem) {
 		System.out.print(ConsoleColors.CYAN + "Manually Loading: " + ConsoleColors.RESET + newItem + " | ");
 		String itemName = newItem.getName();
@@ -116,13 +116,13 @@ public class Vending {
 		}
 	}
 	
-	// overloaded debugging unload
+	// manual unload
 	public void unloadItem(String itemName) {
 		System.out.print(ConsoleColors.CYAN + "Manually Unloading: " + ConsoleColors.RESET + itemName + " | ");
 		ArrayList<Integer> productList = findProduct(itemName);
 		try {
 			int max = slots.get(productList.get(0)).size();
-			int maxIndex = 0;
+			int maxIndex = productList.get(0);
 			for (int i : productList) {
 				Queue<Item> q = slots.get(i);
 				if (q.size() > max) {
