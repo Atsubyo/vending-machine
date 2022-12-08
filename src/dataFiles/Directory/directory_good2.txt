@@ -1,0 +1,15 @@
+Drink, Pepsi, 120, 16, soda, 2
+Drink, Coca-Cola, 120, 16, soda, 4
+Snack, Lays, 220, 4, false, 6
+Drink, Pepsi, 120, 16, soda, 4
+Drink, Pepsi, 120, 16, soda, 3
+Snack, Cheetos, 240, 3, false, 3
+Snack, Cheetos, 240, 3, false, 2
+Snack, Pretzels, 120, 3, false, 2
+Drink, AzT, 100, 16, tea, 4
+Drink, Red Bull, 160, 16, energy, 3
+Drink, AzT, 100, 16, tea, 4
+Drink, Sprite, 139, 12, soda, 3
+Drink, Sprite, 139, 12, soda, 4
+Drink, Lemonade, 70, 10, juice, 5
+Drink, Apple Juice, 50, 8 , juice, 2

@@ -1,0 +1,8 @@
+Drink, CocaCola, 160, 16, soda, 8
+Drink, Red Bull, 140, 16, energy, 8
+Drink, Apple Juice, 70, 10, juice, 8
+Drink, Latte, 100, 8, Coffee, 8
+Snack, Lays, 220, 4, false, 8
+Snack, Cheetos, 240, 3, false, 8
+Snack, Pretzels, 120, 3, false, 8
+Snack, Peanuts, 80, 3, true, 8
