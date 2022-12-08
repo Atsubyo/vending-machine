@@ -1,0 +1,8 @@
+Drink, CocaCola, 160, 16, soda, 3
+Drink, AzT, 140, 16, tea, 3
+Drink, Apple Juice, 70, 10, juice, 3
+Drink, Latte, 100, 8, coffee, 3
+Snack, Lays, 220, 4, false, 3
+Snack, Cheetos, 240, 3, false, 3
+Snack, Pretzels, 120, 3, false, 3
+Snack, Peanuts, 80, 3, true, 3

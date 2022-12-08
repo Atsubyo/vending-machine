@@ -1,4 +1,4 @@
-package application.item;
+package application.vendingItems;
 
 public class Snack extends Item {
 	
@@ -18,7 +18,7 @@ public class Snack extends Item {
 	this.weight = weight;
 	this.containsNuts = containsNuts;
 }
-	
+	// getters and setters
 	public float getWeight() { return weight; }
 	public void setWeight(float weight) { this.weight = weight; }
 	public boolean isContainsNuts() { return containsNuts; }

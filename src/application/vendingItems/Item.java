@@ -1,4 +1,4 @@
-package application.item;
+package application.vendingItems;
 
 public class Item {
 	
@@ -20,6 +20,7 @@ public class Item {
 		this.itemCount = 1;
 	}
 
+	// getters and setters
 	public String getName() { return name; }
 	public void setName(String itemName) { this.name = itemName; }
 	public float getCalories() { return calories; }

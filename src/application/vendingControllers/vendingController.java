@@ -1,9 +1,9 @@
 package application.vendingControllers;
 
+import application.vendingData.*;
+
 import java.util.ArrayList;
 
-import application.vendingData.DataFile;
-import application.vendingData.Vending;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

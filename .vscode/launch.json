@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Launch Driver",
+      "request": "launch",
+      "mainClass": "application.Driver",
+      "projectName": "vending-machine_e5d999c1"
+    },
+    {
+      "type": "java",
       "name": "Launch Main",
       "request": "launch",
       "mainClass": "application.Main",
