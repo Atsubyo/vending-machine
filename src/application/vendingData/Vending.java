@@ -173,8 +173,10 @@ public class Vending {
 		System.out.println("\nRestocking...");
 		boolean restocked = false;
 		for (int i = 0; i < slots.size(); ++i) {
+			if (slots.get(i).size() < maxCap) {
+				System.out.println("Restocked x" + (maxCap - slots.get(i).size()) + " " + directory.get(i));
+			}
 			while (slots.get(i).size() < maxCap) {
-				System.out.println("Restocked x1 " + directory.get(i));
 				restocked = true;
 				slots.get(i).add(itemStock.get(i));
 			}
