@@ -1,2 +1,3 @@
-# vending-machine
-Virtual Vending Machine
+# Vending Machine
+
+Welcome to the Virtual Vending Machine!
