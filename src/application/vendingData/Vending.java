@@ -62,7 +62,7 @@ public class Vending {
 	
 	// manual load
 	public void loadItem(Item newItem) {
-		System.out.print(ConsoleColors.CYAN + "Manually Loading: " + ConsoleColors.RESET + newItem + " | ");
+		System.out.print(ConsoleColors.CYAN + "Loading: " + ConsoleColors.RESET + newItem + " | ");
 		String itemName = newItem.getName();
 		ArrayList<Integer> productList = findProduct(itemName);
 		if (productList.isEmpty()) {
@@ -108,7 +108,7 @@ public class Vending {
 				for (int i = 0; i < newItem.getItemCount(); ++i) {
 					q.add(newItem);
 				}
-				System.out.println(ConsoleColors.CYAN + "File Loading: " + ConsoleColors.GREEN + "x" + newItem.getItemCount() + " [" + newItem.getName() + "]" + ConsoleColors.RESET);
+				System.out.println(ConsoleColors.CYAN + "Loading: " + ConsoleColors.GREEN + "x" + newItem.getItemCount() + " [" + newItem.getName() + "]" + ConsoleColors.RESET);
 				slots.add(q);
 			} catch (NullPointerException e) {
 				continue;
@@ -118,7 +118,7 @@ public class Vending {
 	
 	// manual unload
 	public void unloadItem(String itemName) {
-		System.out.print(ConsoleColors.CYAN + "Manually Unloading: " + ConsoleColors.RESET + itemName + " | ");
+		System.out.print(ConsoleColors.CYAN + "Unloading: " + ConsoleColors.RESET + itemName + " | ");
 		ArrayList<Integer> productList = findProduct(itemName);
 		try {
 			int max = slots.get(productList.get(0)).size();
@@ -141,28 +141,32 @@ public class Vending {
 		}
 	}
 	
-	private void unloadItems(int index) {
-		try {
-			String itemName = directory.get(index);
-			ArrayList<Integer> productList = findProduct(itemName);
-			for (int i : productList) {
-				Queue<Item> q = slots.get(i);
-				if (!q.isEmpty()) {
-					System.out.println(ConsoleColors.CYAN + "File Unloading: " + ConsoleColors.GREEN + itemName + ConsoleColors.RESET);
-					q.remove();
-					return;
+	public void unloadItem(int index) {
+		if (slots.get(index).size() <= 1) {
+			try {
+				String itemName = directory.get(index);
+				ArrayList<Integer> productList = findProduct(itemName);
+				for (int i : productList) {
+					Queue<Item> q = slots.get(i);
+					if (!q.isEmpty()) {
+						System.out.println(ConsoleColors.CYAN + "Unloading: " + ConsoleColors.GREEN + itemName + ConsoleColors.RESET);
+						q.remove();
+						return;
+					}
 				}
+				System.out.println(ConsoleColors.CYAN + "Unloading:" + ConsoleColors.RED + " No Existing [" + itemName + "] | Nothing was Unloaded..." + ConsoleColors.RESET);
+			} catch (IndexOutOfBoundsException e) {
+				System.out.println(ConsoleColors.CYAN + "Unloading:" + ConsoleColors.RED + " Invalid Index: [" + index + "] | Nothing was Unloaded..." + ConsoleColors.RESET);
 			}
-			System.out.println(ConsoleColors.CYAN + "File Unloading:" + ConsoleColors.RED + " No Existing [" + itemName + "] | Nothing was Unloaded..." + ConsoleColors.RESET);
-		} catch (IndexOutOfBoundsException e) {
-			System.out.println(ConsoleColors.CYAN + "File Unloading:" + ConsoleColors.RED + " Invalid Index: [" + index + "] | Nothing was Unloaded..." + ConsoleColors.RESET);
-			return;
+		} else {
+			System.out.println(ConsoleColors.CYAN + "Unloading: " + ConsoleColors.GREEN + directory.get(index) + ConsoleColors.RESET);
+			slots.get(index).remove();
 		}
 	}
 	
 	public void unloadItems(ArrayList<Integer> inputs) {
 		for (int input : inputs) {
-			unloadItems(input);
+			unloadItem(input);
 		}
 	}
 	

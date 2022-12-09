@@ -81,7 +81,7 @@ public class vendingController {
 		if (productList.isEmpty()) {
 			return;
 		} else {
-			myMachine.unloadItem(itemName);
+			myMachine.unloadItem(itemNum);
 			int totalQuantity = 0;
 			for (int i : productList) {
 				int itemQuantity = myMachine.slots.get(i).size();
