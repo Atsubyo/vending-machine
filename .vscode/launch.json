@@ -5,21 +5,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "java",
-      "name": "Launch Driver",
-      "request": "launch",
-      "mainClass": "application.Driver",
-      "projectName": "vending-machine_e5d999c1"
-    },
-    {
-      "type": "java",
-      "name": "Launch Main",
-      "request": "launch",
-      "mainClass": "application.Main",
-      "vmArgs": "--module-path C:/JavaFX/javafx-sdk-19/lib/ --add-modules javafx.controls,javafx.fxml",
-      "projectName": "vending-machine_e5d999c1"
-    },
-    {
       "name": "Java",
       "type": "java",
       "request": "launch",
@@ -48,9 +33,17 @@
     },
     {
       "type": "java",
-      "name": "Launch App",
+      "name": "Launch Driver",
       "request": "launch",
-      "mainClass": "Main",
+      "mainClass": "application.Driver",
+      "projectName": "vending-machine_e5d999c1"
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "application.Main",
+      "vmArgs": "--module-path C:/JavaFX/javafx-sdk-19/lib/ --add-modules javafx.controls,javafx.fxml",
       "projectName": "vending-machine_e5d999c1"
     }
   ]
