@@ -143,7 +143,7 @@ public class Vending {
 	
 	public void unloadItem(int index) {
 		try {
-			if (slots.get(index).size() < 1) {
+			if (slots.get(index).size() <= 1) {
 				String itemName = directory.get(index);
 				ArrayList<Integer> productList = findProduct(itemName);
 				for (int i : productList) {
