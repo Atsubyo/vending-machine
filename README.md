@@ -21,6 +21,8 @@ To run this program, you have a few options.
 
 2. Add proper vmArgs to your launch.json
 
->"vmArgs": "--module-path C:/JavaFX/javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml"
+```sh
+"vmArgs": "--module-path C:/JavaFX/javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml"
+```
 
 ![vmArgs](markdown_images/vmArgs.PNG)
