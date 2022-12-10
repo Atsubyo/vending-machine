@@ -142,8 +142,8 @@ public class Vending {
 	}
 	
 	public void unloadItem(int index) {
-		if (slots.get(index).size() <= 1) {
-			try {
+		try {
+			if (slots.get(index).size() < 1) {
 				String itemName = directory.get(index);
 				ArrayList<Integer> productList = findProduct(itemName);
 				for (int i : productList) {
@@ -155,12 +155,12 @@ public class Vending {
 					}
 				}
 				System.out.println(ConsoleColors.CYAN + "Unloading:" + ConsoleColors.RED + " No Existing [" + itemName + "] | Nothing was Unloaded..." + ConsoleColors.RESET);
-			} catch (IndexOutOfBoundsException e) {
-				System.out.println(ConsoleColors.CYAN + "Unloading:" + ConsoleColors.RED + " Invalid Index: [" + index + "] | Nothing was Unloaded..." + ConsoleColors.RESET);
+			} else {
+				System.out.println(ConsoleColors.CYAN + "Unloading: " + ConsoleColors.GREEN + directory.get(index) + ConsoleColors.RESET);
+				slots.get(index).remove();
 			}
-		} else {
-			System.out.println(ConsoleColors.CYAN + "Unloading: " + ConsoleColors.GREEN + directory.get(index) + ConsoleColors.RESET);
-			slots.get(index).remove();
+		} catch (IndexOutOfBoundsException e) {
+			System.out.println(ConsoleColors.CYAN + "Unloading:" + ConsoleColors.RED + " Invalid Index: [" + index + "] | Nothing was Unloaded..." + ConsoleColors.RESET);
 		}
 	}
 	
