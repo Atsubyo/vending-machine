@@ -6,6 +6,20 @@ This application simulates the core functions of a vending machine. With this ma
 
 ## Requirements
 
+- javaFX
+
 ## How to Run
 
 To run this program, you have a few options.
+
+### vsCode
+
+1. Add Configurations
+`Run->Add Configurations`
+
+![add_config](markdown_images/add_config.PNG)
+
+2. Add proper vmArgs to your launch.json
+
+> "vmArgs": "--module-path C:/JavaFX/javafx-sdk-19/lib --add-modules javafx.controls,javafx.fxml"
+![vmArgs](markdown_images/vmArgs.PNG)
