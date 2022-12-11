@@ -37,7 +37,7 @@ Setup will be different for Visual Studio Code and Eclipse. For running and comp
 
 1. Add javaFX libraries and setup run configurations for `Main.java`. Follow this [tutorial](https://youtu.be/bk28ytggz7E) to set that up.
 
-2. [makefile documentation](#makefile) for compilation.
+2. Refer to the [makefile documentation](#makefile) for compilation.
 
 ## Makefile
 
@@ -54,3 +54,7 @@ For running the application with `Main.java` as the main class:
 ```
 make
 ```
+
+## TODO
+
+- [ ] Create makefile
