@@ -8,9 +8,17 @@ import java.util.ArrayList;
 
 public class Driver {
 	public static void main(String[] args) {
-	    //load data from file
-		String directoryFile = "directory_stock2";
-		String inputFile = "input_all";
+		//load data from file
+		String directoryFile;
+		String inputFile;
+		// check if a file input is given
+		if (args.length >= 1) {
+			directoryFile = args[0];
+			inputFile = args[1];
+		} else {
+			directoryFile = "directory_stock2";
+			inputFile = "input_all";
+		}
 	    DataFile myData = new DataFile("../dataFiles/Directory/" + directoryFile + ".txt", 
 	    							   "../dataFiles/Input/" + inputFile + ".txt");
 	    

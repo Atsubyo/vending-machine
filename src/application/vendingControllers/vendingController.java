@@ -1,5 +1,6 @@
 package application.vendingControllers;
 
+import application.Main;
 import application.vendingData.*;
 
 import java.util.ArrayList;
@@ -30,9 +31,14 @@ public class vendingController {
 		initializeData();
 		initializeItemButtons();
 	}
-	
+
 	public void initializeData() {
-		String directoryFile = "directory_good1";
+		String directoryFile;
+		if (Main.parameters.size() >= 1) {
+			directoryFile = Main.parameters.get(0);
+		} else {
+			directoryFile = "directory_good1";
+		}
 	    DataFile myData = new DataFile("../dataFiles/Directory/" + directoryFile + ".txt");
 	    ArrayList<String> myVending = myData.loadDirectory();
 	    
