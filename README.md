@@ -21,7 +21,7 @@ Setup will be different for Visual Studio Code and Eclipse. For running and comp
 ### Visual Studio Code
 
 1. Add Configurations
-![add_config](markdown_images/vscode_add_config.PNG)
+![add_config](./MD_Images/vscode_add_config.PNG)
 
 2. Add proper vmArgs to your launch.json
 
@@ -29,7 +29,7 @@ Setup will be different for Visual Studio Code and Eclipse. For running and comp
 "vmArgs": "--module-path /file/path/to/javaFX/lib --add-modules javafx.controls,javafx.fxml"
 ```
 
-![vmArgs](markdown_images/vmArgs.PNG)
+![vmArgs](./MD_Images/vmArgs.PNG)
 
 3. Refer to the [makefile documentation](#makefile) for compilation.
 
