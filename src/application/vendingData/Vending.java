@@ -15,17 +15,6 @@ public class Vending {
 	public ArrayList<Queue<Item>> slots;
 	private int maxCap;
 	
-	// for testing only
-	private void printData(String[] data) {
-		for (int i = 0; i < data.length; ++i) {
-			System.out.print(data[i]);
-			if (i != data.length - 1) {
-				System.out.print(", ");
-			}
-		}
-		System.out.println();
-	}
-	
 	public Vending(ArrayList<String> data) {
 		directory = new ArrayList<String>();
 		slots = new ArrayList<Queue<Item>>();
@@ -39,6 +28,22 @@ public class Vending {
 		itemStock = new ArrayList<Item>();
 		this.maxCap = maxCap;
 		loadItem(data);
+	}
+
+	@Override
+	protected void finalize() throws Throwable {
+		displayItems();
+	}
+
+	// for testing only
+	private void printData(String[] data) {
+		for (int i = 0; i < data.length; ++i) {
+			System.out.print(data[i]);
+			if (i != data.length - 1) {
+				System.out.print(", ");
+			}
+		}
+		System.out.println();
 	}
 	
 	public Item parseData(String data) {

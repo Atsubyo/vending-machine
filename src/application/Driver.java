@@ -34,7 +34,7 @@ public class Driver {
 	    
 	    // Test line to show items before removing initially
 	    System.out.println("Vending Machine Original State:");
-	    myMachine.displayItems();
+	    System.out.println(myMachine);
 	    
 	    System.out.println("------------------------------------------------------------------------------------------------------------------------------------------------");
 		System.out.println("Unloading Vending Machine:");
@@ -53,6 +53,7 @@ public class Driver {
 	    
 	    System.out.println("Vending Machine Final State: ");
 	    //Final output to display after removing
-	    myMachine.displayItems();
+	    myMachine = null;
+		System.gc();
 	}
 }
