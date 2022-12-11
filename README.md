@@ -16,7 +16,7 @@ First clone this repository into your local directories. To do so, you may run t
 git clone https://github.com/Atsubyo/vending-machine.git && cd vending-machine
 ```
 
-Setup will be different for Visual Studio Code and Eclipse. For running and compilation, please refer to the [makefile documentation](#makefile) below.
+Setup will be different for [Visual Studio Code](#visual-studio-code) and [Eclipse](#eclipse). For running and compilation, please refer to the [makefile documentation](#makefile) below.
 
 ### Visual Studio Code
 
