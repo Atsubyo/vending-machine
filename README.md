@@ -12,7 +12,8 @@ This application simulates the core functions of a vending machine. With this ma
 ## How to Use
 
 First clone this repository into your local directories. To do so, you may run the following in your desired directory in your terminal:
-```
+
+```sh
 git clone https://github.com/Atsubyo/vending-machine.git && cd vending-machine
 ```
 
@@ -45,13 +46,13 @@ This application offers to main() components. There is the `Driver.java` that is
 
 For testing/debugging with `Driver.java` as the main class:
 
-```
+```sh
 make 
 ```
 
 For running the application with `Main.java` as the main class:
 
-```
+```sh
 make
 ```
 
