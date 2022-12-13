@@ -29,7 +29,7 @@ Setup will be different for [Visual Studio Code](#visual-studio-code) and [Eclip
     ![add_config](./MD_Images/vscode_add_config.PNG)
 
 3. Ensure that your `.classpath` contains the correct file path to your javaFX installation.
-    ![classpath](./MD_images/vscode_classpath.PNG)
+    ![classpath](./MD_Images/vscode_classpath.PNG)
 
 4. Add proper vmArgs to your launch.json
 
