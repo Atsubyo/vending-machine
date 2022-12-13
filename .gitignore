@@ -1,0 +1,4 @@
+.vscode/*
+build.fxbuild
+src/application/Debugger.class
+markdown_images/*
