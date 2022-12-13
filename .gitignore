@@ -1,3 +1,8 @@
 .vscode/*
+<<<<<<< HEAD
+
+markdown_images/*
+=======
 build.fxbuild
 src/application/Debugger.class
+>>>>>>> master

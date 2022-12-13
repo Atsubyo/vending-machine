@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
+	<name>vending-machine</name>
+=======
 	<name>vending_machine</name>
+>>>>>>> master
 	<comment></comment>
 	<projects>
 	</projects>
@@ -22,7 +26,11 @@
 	</natures>
 	<filteredResources>
 		<filter>
+<<<<<<< HEAD
+			<id>1670692623863</id>
+=======
 			<id>1670872790757</id>
+>>>>>>> master
 			<name></name>
 			<type>30</type>
 			<matcher>
