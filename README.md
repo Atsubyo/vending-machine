@@ -28,7 +28,11 @@ Setup will be different for [Visual Studio Code](#visual-studio-code) and [Eclip
 2. Add Configurations
     ![add_config](./MD_Images/vscode_add_config.PNG)
 
-3. Add proper vmArgs to your launch.json
+3. Ensure that your `.classpath` contains the correct file path to your javaFX installation.
+
+    ![classpath](./MD_images/vscode_classpath.PNG)
+
+4. Add proper vmArgs to your launch.json
 
     ```sh
     "vmArgs": "--module-path /file/path/to/javaFX/lib --add-modules javafx.controls,javafx.fxml"
@@ -36,7 +40,7 @@ Setup will be different for [Visual Studio Code](#visual-studio-code) and [Eclip
 
     ![vmArgs](./MD_Images/vmArgs.PNG)
 
-4. Refer to the [makefile documentation](#makefile) for compilation.
+5. Refer to the [makefile documentation](#makefile) for compilation.
 
 #### As an alternative to makefile and terminal based compilation for `App.java`, you can run directly in Visual Studio Code with the Java Extension Pack
 
