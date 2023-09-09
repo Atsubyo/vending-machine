@@ -26,10 +26,10 @@ Setup will be different for [Visual Studio Code](#visual-studio-code) and [Eclip
 1. Ensure that you have [Visual Studio Code](https://code.visualstudio.com/download) installed. Having the [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) is recommended.
 
 2. Add Configurations
-    ![add_config](./MD_Images/vscode_add_config.PNG)
+    ![Adding configurations by choosing options in vscode: Run -> Add Configuration...](./MD_Images/vscode_add_config.PNG)
 
 3. Ensure that your `.classpath` contains the correct file path to your javaFX installation.
-    ![classpath](./MD_Images/vscode_classpath.PNG)
+    ![classpathentry tags with a path property containing the path to javaFX installation.](./MD_Images/vscode_classpath.PNG)
 
 4. Add proper vmArgs to your launch.json
 
@@ -37,7 +37,7 @@ Setup will be different for [Visual Studio Code](#visual-studio-code) and [Eclip
     "vmArgs": "--module-path /file/path/to/javaFX/lib --add-modules javafx.controls,javafx.fxml"
     ```
 
-    ![vmArgs](./MD_Images/vmArgs.PNG)
+    ![Above snippet is copoied into the launch.json under the "mainClass" property in the object named "Launch Main."](./MD_Images/vmArgs.PNG)
 
 5. Refer to the [makefile documentation](#makefile) for compilation.
 
@@ -56,12 +56,12 @@ Setup will be different for [Visual Studio Code](#visual-studio-code) and [Eclip
 #### As an alternative to makefile and terminal based compilation for `App.java`, you can run directly in the Eclipse IDE
 
 1. Open the drop down menu on "Run".
-    ![drop_down_menu](./MD_Images/eclipse_run_drop_down.PNG)
+    [Drop down menu from opening the down arrow next to green run play button](./MD_Images/eclipse_run_drop_down.PNG)
 
 2. Enter run configurations once again and go to the `App` item.
 
 3. Select `run` in the bottom right fo the window
-    ![run_app](./MD_Images/eclipse_run_app.PNG)
+    ![Selecting run after having the "App" run configuration opened.](./MD_Images/eclipse_run_app.PNG)
 
 ## Makefile
 
